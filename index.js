@@ -26,7 +26,7 @@ The devil wears prada
 final should be we came as romans
 */
 
-function removeArticles(str) {
+const removeArticles = (str) => {
   words = str.split(" ");
   if(words.length <= 1) return str;
   if(words[0] == 'the' || words[0] == 'a' || words[0] == 'an'){
@@ -35,7 +35,7 @@ function removeArticles(str) {
   return str;
 }
 
-function compareStrings(a, b) {
+const compareStrings = (a, b) => {
   aName = a.toLowerCase();
   bName = b.toLowerCase();
   const articleRemovedA = removeArticles(aName);
